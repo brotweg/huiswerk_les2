@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,18 +12,50 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Used colors: grey: #899CA0 , dark-green: #1C2B32 */
+
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
 
+}
+
+main h2 {
+    font-size: 18px;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+a {
+    color: #899CA0;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+body {
+    font-family: poppins, sans-serif;
+
+}
 
 
 /*////////////////////////
@@ -32,18 +66,153 @@ Table of Contents:
 
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    text-align: center;
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: 1700px;
+    background-position: 50% 30%;
+}
 
+header h1 {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.header-container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0px;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+
+}
+
+input:focus {
+    outline: none;
+    background-color: hsl(0, 0%, 100%, 60%);
+    font-family: "Poppins", sans-serif;
+
+}
+
+input::placeholder {
+    color: black;
+    font-family: "Poppins", sans-serif;
+
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 250px;
+    height: 40px;
+    border-radius: 0px 25px 25px 0px;
+    margin-left: -6px;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+article {
+    background-color: #FFFFFF;
+    box-shadow: 1px 4px 14px 1px rgb(0 0 0 / 20%);
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+    border-radius: 10px;
+    font-size: 12px;
+}
 
+
+.author {
+    padding: 10px 0px;
+}
+
+.testimonial img {
+    width: 44px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+
+}
+
+article p {
+    display: inline-block;
+
+}
+
+span {
+    font-style: italic;
+}
 
 /*///////////// 3.3 Support /////////////*/
+
+main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+main button {
+    background-color: black;
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 20px 0px;
+    width: 180px;
+    height: 50px;
+}
+
+.support p {
+    margin: 20px 0px;
+}
 
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq details {
+    margin: 20px 0px;
+    cursor: pointer;
+}
 
+details[open] > p {
+    background-color: #899CA0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    background-color: black;
+    color: #FFFFFF;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin-top: 60px;
+
+}
+
+footer p {
+    display: inline-block;
+    line-height: 50px;
+}
